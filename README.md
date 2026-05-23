@@ -15,6 +15,10 @@
   - DB 커넥션 풀 고갈
   - 배포 후 장애 / 롤백
 
+## Scenario Seeds
+
+MVP 시나리오 정의는 `src/infrastructure/scenario-repository/seeds/scenarios.seed.json`에서 관리합니다. 코드 변경 없이 시나리오 문구, 초기 상태, 힌트, 추천 해결 경로를 검토하기 쉽도록 seed를 JSON으로 분리했습니다.
+
 ## Scripts
 
 ```bash

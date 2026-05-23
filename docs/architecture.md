@@ -14,7 +14,7 @@ src/app              Next.js pages and route handlers
 src/components       client UI
 src/domain           pure domain types and evaluation logic
 src/application      use cases
-src/infrastructure   scenario seed, state machine, in-memory store
+src/infrastructure   JSON scenario seed repository, state machine, in-memory store
 tests                domain/application tests
 ```
 
@@ -26,7 +26,7 @@ tests                domain/application tests
 
 ## 저장 전략
 
-MVP는 `globalThis` 기반 인메모리 attempt store를 사용한다. 이후 사용자 계정/진도 저장이 필요하면 DB repository로 교체한다.
+MVP는 `globalThis` 기반 인메모리 attempt store를 사용한다. 시나리오 정의는 `src/infrastructure/scenario-repository/seeds/scenarios.seed.json`을 소스 오브 트루스로 사용한다. 이후 사용자 계정/진도 저장이 필요하면 DB repository로 교체한다.
 
 ## 확장 지점
 
